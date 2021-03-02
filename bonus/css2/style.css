@@ -1,0 +1,69 @@
+/* General */
+body{
+    padding-top: 130px;
+    font-family: 'Anton', sans-serif;
+    background-image: url(https://f.vividscreen.info/soft/4ddcbb597735083cbb94fb9b9ec378fe/Simple-and-Beautifull-Wood-Texture-1920x1080.jpg);
+}
+
+img{
+    width: 50px;
+    height: auto;
+}
+
+img.tower{
+    width: 80%;
+}
+
+img.white-img{
+    filter: invert(95%);
+}
+/* /////////////////////////////////////////////////////////// */
+
+/* Logo amd title */
+.page-logo{
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+
+.page-logo img{
+    width: 250px;
+}
+
+.page-logo .title{
+    display: inline-block;
+    font-size: 200px;
+    color: whitesmoke;
+}
+/* /////////////////////////////////////////////////////////// */
+
+/* Chess-table */
+.square{
+    height: 70px;
+    background-image: url(https://textures.world/wp-content/uploads/2018/10/Dark-Wood-Seamless-Background-Texture-1-copy.jpg);
+    border: 1px solid black;
+    text-align: center;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.square:not(.bc-white, .light-chess, .dark-chess){
+    border: none;
+}
+
+.square.bc-white{
+    background-color: whitesmoke;
+    background-image: none;
+}
+
+.square.light-chess{
+    background-image: url(data:image/jpeg;base64,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);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4) inset
+}
+
+.square.dark-chess{
+    background-image: url(https://images.homedepot-static.com/productImages/c06a1d5d-d126-485f-b318-d587e0c3af0d/svn/brewster-wallpaper-rolls-hzn43054-64_1000.jpg);
+    box-shadow: 0 0 50px rgba(113, 113, 113, 0.5) inset;
+}

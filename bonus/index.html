@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    
+    <!-- Framework css link -->
+    <link rel="stylesheet" href="./css2/12-bool-framework.css">
+    
+    <!-- Main css link -->
+    <link rel="stylesheet" href="./css2/style.css">
+
+    <!-- Window title -->
+    <title>Chess</title>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="page-logo">
+        <img src="./img/logo-chess.png" alt="chess logo">
+        <h1 class="title">Chess</h1>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- Border of the table -->
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white"></div></div>
+        <div class="col-1"><div class="square bc-white">a</div></div>
+        <div class="col-1"><div class="square bc-white">b</div></div>
+        <div class="col-1"><div class="square bc-white">c</div></div>
+        <div class="col-1"><div class="square bc-white">d</div></div>
+        <div class="col-1"><div class="square bc-white">e</div></div>
+        <div class="col-1"><div class="square bc-white">f</div></div>
+        <div class="col-1"><div class="square bc-white">g</div></div>
+        <div class="col-1"><div class="square bc-white">h</div></div>
+        <div class="col-1"><div class="square bc-white"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- Main-pieces-black-->
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">8</div></div>
+        <div class="col-1"><div class="square light-chess"><img class="tower" src="./img/tower-chess.png" alt="tower-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img src="./img/horse-chess.png" alt="horse-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img src="./img/bishop-chess.png" alt="bishop-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img src="./img/queen-chess.png" alt="queen-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img src="./img/king-chess.png" alt="king-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img src="./img/bishop-chess.png" alt="bishop-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img src="./img/horse-chess.png" alt="horse-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="tower" src="./img/tower-chess.png" alt="tower-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">8</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- Pawn-pieces-black -->
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">7</div></div>
+        <div class="col-1"><div class="square dark-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">7</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- Chess-table -->
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">6</div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">6</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">5</div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">5</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">4</div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">4</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">3</div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">3</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- Pawn-pieces-white -->
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">2</div></div>
+        <div class="col-1"><div class="square light-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="white-img" src="./img/pawn-chess.png" alt="pawn-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">2</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- Main-pieces-white -->
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white">1</div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="tower white-img" src="./img/tower-chess.png" alt="tower-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img class="white-img" src="./img/horse-chess.png" alt="horse-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="white-img" src="./img/bishop-chess.png" alt="bishop-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img class="white-img" src="./img/queen-chess.png" alt="queen-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="white-img" src="./img/king-chess.png" alt="king-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img class="white-img" src="./img/bishop-chess.png" alt="bishop-chess"></div></div>
+        <div class="col-1"><div class="square dark-chess"><img class="white-img" src="./img/horse-chess.png" alt="horse-chess"></div></div>
+        <div class="col-1"><div class="square light-chess"><img class="tower white-img" src="./img/tower-chess.png" alt="tower-chess"></div></div>
+        <div class="col-1"><div class="square bc-white">1</div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- Border of the table -->
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square bc-white"></div></div>
+        <div class="col-1"><div class="square bc-white">a</div></div>
+        <div class="col-1"><div class="square bc-white">b</div></div>
+        <div class="col-1"><div class="square bc-white">c</div></div>
+        <div class="col-1"><div class="square bc-white">d</div></div>
+        <div class="col-1"><div class="square bc-white">e</div></div>
+        <div class="col-1"><div class="square bc-white">f</div></div>
+        <div class="col-1"><div class="square bc-white">g</div></div>
+        <div class="col-1"><div class="square bc-white">h</div></div>
+        <div class="col-1"><div class="square bc-white"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+    <div class="container clearfix">
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+        <div class="col-1"><div class="square"></div></div>
+    </div>
+</body>
+</html>
